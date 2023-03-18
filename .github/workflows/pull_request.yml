@@ -1,0 +1,11 @@
+name: Listen Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  notify-open-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Pull Request
+        run: echo "pull request was issued"
